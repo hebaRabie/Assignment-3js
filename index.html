@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--   icon      -->
+    <link rel="shortcut icon" href="./imges/bookmark.ico" type="image/x-icon" />
+    <title>Bookmarker</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+      integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Style Css -->
+    <link rel="stylesheet" href="./style/style.css" />
+    <!-- Start Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="page">
+      <div class="container">
+        <!-- Start Header -->
+        <div
+          class="header d-flex justify-content-center align-items-center p-5"
+        >
+          <h1>Bookmarker</h1>
+        </div>
+        <!-- End Header -->
+        <!-- Start Content -->
+        <div class="content">
+          <!-- Start Title -->
+          <div class="title d-flex justify-content-center align-items-center">
+            <i class="fa-solid fa-bookmark fs-2 icon-green"></i>
+            <h2 class="fs-3 p-3">Bookmark your favorite sites</h2>
+            <i class="fa-solid fa-bookmark fs-2 light-green"></i>
+          </div>
+          <!-- End Title -->
+          <!-- Start Inputs -->
+          <div class="inputs">
+            <!-- Start Site Name -->
+            <div class="siteName mb-5">
+              <i class="fa-solid fa-book-bookmark p-1 mb-2"></i>
+              <label for=""> Site Name</label>
+              <input
+                type="text"
+                placeholder="Bookmark Text"
+                class="form-control"
+              />
+            </div>
+            <div class="url mb-5">
+              <i class="fa-solid fa-link pe-1 mb-2"></i>
+              <label for="">Site URL</label>
+              <input
+                type="text"
+                placeholder="WebSite URL"
+                class="form-control"
+              />
+            </div>
+
+            <input
+              type="submit"
+              class="bg-danger text-white px-5 py-2 border-0 mb-5 rounded-1 mx-auto d-block"
+            />
+            <!-- END Site Name -->
+          </div>
+          <!-- End Inputs -->
+          <!-- Start Table -->
+          <table class="table table-striped">
+            <thead>
+              <tr>
+                <th>Index</th>
+                <th>Website Name</th>
+                <th>Visit</th>
+                <th>Delete</th>
+              </tr>
+            </thead>
+            <tbody>
+              <!-- <tr>
+                <td>1</td>
+                <td>FaceBook</td>
+                <td>
+                  <button type="button" class="btn btn-info text-white">
+                    <i class="fa-solid fa-eye pe-2"></i>
+                    Visit
+                  </button>
+                </td>
+                <td>
+                  <button
+                    type="button "
+                    class="btn btn-info bg-danger text-white"
+                  >
+                    <i class="fa-solid fa-trash-can"></i>
+                    Visit
+                  </button>
+                </td>
+              </tr> -->
+            </tbody>
+          </table>
+          <!-- End Table -->
+        </div>
+        <!-- End Content -->
+      </div>
+    </div>
+    <div id="alertModal" class="alert-box" style="display: none;">
+  <div class="alert-header">
+    <span>Site Name or Url is not valid, Please follow the rules below :</span>
+    <button class="close-btn" onclick="closeAlert()">&#10006;</button>
+  </div>
+  <div class="alert-content">
+    <p id="alertMessage">  Error alert here</p>
+  </div>
+</div>
+<div class="sss"></div>
+    <!-- Java Script And Bootstrap -->
+    <script src="./JavaScript/main.js"></script>
+  </body>
+</html>
